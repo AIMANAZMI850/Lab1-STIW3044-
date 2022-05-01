@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Resume</title>
+    <script>
+        function sideMenu() {
+            var x= document.getElementById("idsidebar");
+            if(x.className.indexOf("w3-show") == -1){
+                x.className +=" w3-show";
+            }else{
+                x.className = x.className.replace(" w3-show", "");
+            }
+        } 
+    </script>
+     <style type="text/css">
+        body
+        {
+            width: 1204px;
+            margin: auto;
+        }
+        
+        @media screen and (min-width: 600px)
+        {
+            header{
+                height: 150px;
+            }
+        }
+        @media screen and (min-width: 601px)
+        {
+            header{
+                height: 200px;
+            }
+        }
+        @media screen and (min-width: 1001px)
+        {
+            header{
+                height: 256px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-bar w3-light-blue">
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right fa fa-info">Contact Info</a>
+        <a href="#profile" class="w3-bar-item w3-button w3-hide-small w3-right fa fa-user">Profile</a>
+        <a href="#educations" class="w3-bar-item w3-button w3-hide-small w3-right fa fa-book">Educations</a>
+        <a href="#work experiences" class="w3-bar-item w3-button w3-hide-small w3-right fa fa-briefcase">Work Experiences</a>
+        <a href="#skills" class="w3-bar-item w3-button w3-hide-small w3-right fa fa-gears ">Skills</a>
+        <a href="#extra curiculum " class="w3-bar-item w3-button w3-hide-small w3-right fa fa-futbol-o">Extra Curiculum </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button  w3-right w3-hide-large w3-hide-medium"  onclick="sideMenu()">&#9776;</a> 
+    </div>
+    <div id="idsidebar" class="w3-bar-block w3-light-blue w3-hide w3-hide-large w3-hide-medium">
+        <a href="#" class="w3-bar-item w3-button  w3-right fa fa-info">Contact Info</a>
+        <a href="#profile" class="w3-bar-item w3-button  w3-right fa fa-user ">Profile</a>
+        <a href="#educations" class="w3-bar-item w3-button  w3-right fa fa-book">Educations</a>
+        <a href="#work experiences" class="w3-bar-item w3-button  w3-right fa fa-briefcase">Work Experiences</a>
+        <a href="#skills" class="w3-bar-item w3-button  w3-right fa fa-gears">Skills</a>
+        <a href="#extra curiculum " class="w3-bar-item w3-button  w3-right fa fa-futbol-o">Extra Curiculum </a> 
+    </div>
+
+    <header class="w3-header w3-container w3-light-blue w3-padding-32 w3-center" style="background-image:url('image.jpg');height:256px">
+    </header>
+    
+    <div id="Contact Info" class="w3-container w3-row w3-light-grey w3-padding-32">
+        <div class="w3-container w3-third fa fa-info w3-center" style="font-size: 90px;">
+        </div>
+        <div class="w3-container w3-twothird  " >
+            <h2 style="font-size: 35px;">Info</h2>
+            <img src="image1.png" >
+           <p><b>NAME :</b> MOHD AIMAN<br><b>PHONE NUMBER :</b> 011-40747266<br><b>EMAIL :</b> aimanazmi850@gmail.com<br><b>ADDRESS :</b> ALOR SETAR,KEDAH</p>
+        </div>
+     </div>
+
+    <div id="profile" class="w3-container w3-row w3-blue w3-padding-32" >
+        <div class="w3-container w3-third fa fa-user w3-center" style="font-size: 90px;">
+        </div>
+        <div class="w3-container w3-twothird ">
+            <h2 style="font-size: 30px;">Profile</h2>
+            <p>Certified computer technician successful at developing unique troubleshooting techniques, executing
+                high-quality repairs, and providing services to customers. Qualified to repairs Windows. Knowledgeable
+                professional offering technical and practical guidance on how to prevent future problemss and prolong
+                product longevity</p>
+        </div>
+    </div>
+
+    <div id="educations" class="w3-container w3-row w3-light-grey w3-padding-32">
+        <div class="w3-container w3-third fa fa-book w3-center" style="font-size: 90px;">
+        </div>
+        <div class="w3-container w3-twothird" >
+            <h2 style="font-size: 30px;">Education</h2>
+            <ul>
+                <li><b>Bachelor of Science with Honours(Information Technology)</b><br>Major in Software Engineering<br>2020 - current<br>Universiti Utara Malaysia</li> 
+            </ul>
+            <ul>
+               <li><b>Diploma In Information Technology(Networking)</b><br>2016 - 2019<br>Politeknik Tuanku Syed Sirajuddin</li>
+            </ul>
+            <ul>
+                <li><b>Sijil Pelajaran Malaysia</b><br>2014 - 2015<br>SMK Syed Mohamed Al-Bukhary</li>
+            </ul>
+       </div>
+    </div>
+
+    <div id="work experiences" class="w3-container w3-row w3-blue w3-padding-32">
+        <div class="w3-container w3-third fa fa-briefcase w3-center" style="font-size: 90px;">
+        </div>
+        <div class="w3-container w3-twothird ">
+            <h2 style="font-size: 30px;">Work Experience</h2>
+            <ul>
+                <li><b>Computer Technician</b><br>2019 - 2020<br>Smartsys Computers Sdn Bhd<br>Build new pc<br>Replace any components in pc's or laptop's</li>
+            </ul>
+            <ul>
+                 <li><b>Intership</b><br>2018 - 2019<br>Smartsys Computers Sdn Bhd<br>Troubleshhoting pc or laptop problems<br>Buld LAN cable(CAT5 & CAT6)</li>
+            </ul>
+        </div>
+     </div>
+
+     <div id="skills" class="w3-container w3-row w3-light-grey w3-padding-32">
+        <div class="w3-container w3-third  fa fa-gears w3-center" style="font-size: 90px;">
+        </div>
+        <div class="w3-container w3-twothird ">
+            <h2 style="font-size: 30px;">Skill</h2>
+            <ul>
+                <li>Can work under pressure and meet tight deadline</li>
+                <li>Fluent in Bahasa Melayu and fair in English</li>
+                <li>Can work in group</li>
+            </ul>
+        </div>
+     </div>
+
+     <div id="extra curiculum" class="w3-container w3-row w3-blue w3-padding-32">
+        <div class="w3-container w3-third  fa fa-futbol-o w3-center" style="font-size: 90px;">
+        </div>
+        <div class="w3-container w3-twothird ">
+            <h2 style="font-size: 30px;">Extra Curiculum</h2>
+            <ul>
+                <li><b>Politeknik Tuanku Syed Sirajuddin</b><br>2017 - 2018<br>Participate in inter-departmental sports in volleyball<br>Participate in inter-departmental sports in badminton<br>
+                Participate in Jabatan Sukarelawan Malaysia(RELA)<br>Participate in Kursus Asas Rela<br>Participate in Kursus Ikhtiar Hidup at Gua Kelam,Perlis</li>
+            </ul>
+        </div>
+     </div>
+    <footer>
+        <p class="w3-container w3-row w3-grey w3-center w3-padding-32 "><b>Copyright aimanazmi</b></p>
+    </footer>
+    
+</body>
+
+</html>
